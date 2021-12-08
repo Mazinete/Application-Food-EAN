@@ -1,24 +1,23 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import NavBar from './components/Navbar';
-import TodoList from './components/TodoList';
+import   Products  from './components/Products';
+import React from 'react';
 
 function App() {
   
   return (
     <div className="App">
-      <header className="App-header">
-        <NavBar titre="Application TodoList" />
-      </header>
-      <main className="container">
-        <div className="row">
-          <div className="col-md-6 mt-5">
-            <TodoList />
-          </div>
-        </div>
-      </main>
+     
+        <NavBar titre="Application Food EAN " />
+      <div className="container" mt-3> 
+        <Products />
+      </div> 
+      
     </div>
   );
 }
 
 export default App;
+
+
